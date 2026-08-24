@@ -114,7 +114,7 @@ public class BirdController : MonoBehaviour
 
     private void HandleGameCollision(Collision2D collision)
     {
-        // Direct hit on the ground
+        
         if (collision.collider.CompareTag(Constants.GroundTag))
         {
             _flapRequested = false;
@@ -126,7 +126,7 @@ public class BirdController : MonoBehaviour
             return;
         }
 
-        // Hit a pipe / ceiling
+        
         if (!collision.collider.CompareTag(Constants.ObstacleTag))
         {
             return;

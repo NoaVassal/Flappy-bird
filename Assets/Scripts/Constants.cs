@@ -1,4 +1,4 @@
-public class Constants
+public static class Constants
 {
     public const string PlayerActionMap = "Player";
     public const string FlapAction = "Flap";
